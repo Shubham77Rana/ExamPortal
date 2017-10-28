@@ -48,10 +48,6 @@ if($password1!=$password2)
 
 else
 {
-    $con=mysqli_connect("localhost","root","rana77","exam")
-            or die(mysqli_error($con));
-    session_start();
-    $school_name=$_SESSION['name'];
     $result1=mysqli_query($con,"select school from admin where name='$school_name';");
     $school=mysqli_fetch_array($result1);
     $school_name=$school['school'];

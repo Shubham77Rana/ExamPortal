@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-<title>my first page</title>
+<title>Admin Login</title>
 <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
 <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css"/>
 <link rel="stylesheet" href="..bootstrap/css/bootstrap-grid.css" type="text/css">
