@@ -5,8 +5,7 @@
         <title>Register</title>
     </head>
     <body><?php
-$con=mysqli_connect("localhost","root","rana77","exam")
-            or die(mysqli_error($con));
+include("connection.php");
 session_start();
 $school_name=$_SESSION['name'];
 

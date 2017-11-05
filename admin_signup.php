@@ -7,31 +7,25 @@
 <script type="text/javascript" src="bootstrap/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="shadow.css">
+<style>
+	.form-container{
+		margin-top: 8vh;
+	}
+</style>
+
    </head>
    <body>
-      <nav class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <div class="navbar-brand">Welcome Adminstrator</div>
-                </div>
-                <div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="adminstrator.php">Home</a></li>
-                        <li><a href="index.php">Signout</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <?php session_start(); include("navigation_bar.php");    ?>
         <div class="container-fluid bg">
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12"></div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <!--form start-->
-                    <form class="form-container" action="user_register.php" method="POST">
-                        <h1>Admin Signup Form</h1>  
+                    <form class="form-container form1" action="user_register.php" method="POST">
+                        <h1>Admin Signup</h1>  
                          <div class="form-group">
                             <label for="name">Full-Name</label>
-                            <input type="username" class="form-control" name="username" placeholder="Fullname">
+                            <input type="text" class="form-control" name="username" placeholder="Fullname">
                         </div>
                          <div class="form-group">
                             <label for="password">Password</label>
@@ -41,13 +35,6 @@
                             <label for="confirmpassword">Confirm Password</label>
                             <input type="password" class="form-control" name="password2" placeholder="confirm-password">
                         </div>
-                        <div class="form-group">
-                             <label for="user">Select School</label><br>
-                        <select id="user" name="user" class="divroll">
-                         <option value="dis">DIS</option>
-                          <option value="army">Army School</option>
-                          </select>
-                         </div>
                          <div class="form-group">
                             <label for="email">Email-ID</label>
                             <input type="email" class="form-control" name="email" placeholder="Email">

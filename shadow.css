@@ -1,13 +1,33 @@
     *
     {
-        color: black;     
+        color: black; 
     }
-    .bg{
-        background:url("exam.jpg");
+   body
+   {
+        background:url("c.jpg");
         height: 100%;
-        background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+        background-position: right top;
+        background-repeat: repeat-y;
+        background-size: cover;
+    }
+.form1
+        {
+            background-color: whitesmoke;
+        }
+    .form-group
+    {
+        font-size:18px;
+        font-weight: bold;
+    }
+    .form-control
+    {
+         font-size:15px;
+        font-weight: bold;
+    }
+    .checkbox
+    {
+        font-size:18px;
+        font-weight: bold;
     }
     .form-container
     {
@@ -19,19 +39,33 @@
         -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
         box-shadow:  -1px 4px 26px 11px rgba(0,0,0,0.75);
     }
-        .navbar{
-            font-size: 20px;
+        .nav{
+            font-size: 16px;
         }
         .navbar-brand
         {
-            font-size: 20px;
+            font-size: 25px;
         }
-        a:link{
+        a:hover{
             text-decoration:  none;
             font-weight:      bold;
-            font-size: 20px;
-            color:            blue;
-        } 
+            font-size: 20.5px;
+            color:            green;
+        }
         a{
+            font-weight:  bold;
+            font-size: 20px;
             color: black;
         }
+        .btn
+        {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .divroll
+        {
+           
+            width:350px;
+                
+        }
+     

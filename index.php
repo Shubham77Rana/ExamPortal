@@ -15,25 +15,40 @@ and open the template in the editor.
 <script type="text/javascript" src="bootstrap/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="shadow.css">
+<style>
+	.form-container{
+		margin-top: 10vh;
+	}
+</style>
 </head>
     <body>
-        <div class="container-fluid bg">
+
+	<nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand"> WELCOME TO EXAMINATION PORTAL
+		</div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12"></div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <!--form start-->
-                    <form class="form-container" action="admin_login.php" method="POST">
-                        <h1>Login Form</h1>
-                         <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="username" class="form-control" name="username" placeholder="username">
+                    <form class="form-container form1" action="admin_login.php" method="POST">
+                        <h1>Login Form</h1><br>
+                         <div class="input-group form-group">
+                            <span class="input-group-addon glyphicon glyphicon-user"> Username</span>
+                            <input type="text" class="form-control" name="username" placeholder="username">
                         </div>
-                         <div class="form-group">
-                            <label for="exampleInputPassword">Password</label>
+                         <div class="input-group form-group">
+			    <span class="input-group-addon glyphicon glyphicon-lock"> Password</span>
                             <input type="password" class="form-control" name="password" placeholder="password">
-                        </div>
+                        </div><br>
                          <div class="form-group">
-                             <label for="user">select school</label><br>
+                             <label><span class="glyphicon glyphicon-education"></span> select school <span class="glyphicon glyphicon-education"></span></label><br>
                         <select id="user" name="school">
                          <option value="DIS">DIS</option>
                           <option value="Army School">Army School</option>
@@ -50,6 +65,10 @@ and open the template in the editor.
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12"></div>
             </div>
+            
         </div>
+        <?php include("footer.php"); ?>
+       
     </body>
+     
 </html>

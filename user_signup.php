@@ -20,26 +20,15 @@ and open the template in the editor.
 </style>
     </head>    
     <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <div class="navbar-brand">Welcome <?php session_start();
-         					echo $_SESSION['name']; ?></div>
-                </div>
-                <div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="adminstrator.php">Home</a></li>
-                        <li><a href="index.php">Signout</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        
+        <?php session_start(); include("navigation_bar.php");    ?>
+        
         <div class="container-fluid bg">
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12"></div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <!--form start-->
-                    <form class="form-container" action="user_register.php" method="POST">
+                    <form class="form-container form1" action="user_register.php" method="POST">
                         <h1>Signup Form</h1>  
                          <div class="form-group">
                             <label for="name">Full-Name</label>

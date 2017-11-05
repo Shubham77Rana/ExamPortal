@@ -7,7 +7,7 @@
 $username=$_POST['username'];
 $password=$_POST['password'];
 $school=$_POST['school'];
-$con=mysqli_connect("localhost","root","rana77","exam") or die(mysqli_error($con));
+include("connection.php");
 $result=mysqli_query($con,"select * from admin where name= '$username' and password= '$password' and school='$school'")
         or die("Failed to query database ".mysql_error($result)); 
 
